@@ -1,0 +1,41 @@
+{
+    "name": "mimisk13/laravel-tabler-fortify",
+    "description": "Laravel Fortify Tabler UI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mimis K",
+            "email": "mimisk88@gmail.com",
+            "homepage": "https://mimisk.com"
+        }
+    ],
+    "homepage": "https://github.com/mimisk13/laravel-tabler-fortify",
+    "keywords": ["Laravel", "LaravelTablerFortify", "Tabler"],
+    "require": {
+        "laravel/fortify": "^1.19"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0|~10",
+        "orchestra/testbench": "~7|~8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mimisk13\\LaravelTablerFortify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mimisk13\\LaravelTablerFortify\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mimisk13\\LaravelTablerFortify\\LaravelTablerFortifyServiceProvider"
+            ],
+            "aliases": {
+                "LaravelTablerFortify": "Mimisk13\\LaravelTablerFortify\\Facades\\LaravelTablerFortify"
+            }
+        }
+    }
+}
